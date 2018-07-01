@@ -1,6 +1,4 @@
 // Select color input
-
-
 function addColor(){
     let col = $("td");
     col.click(function (){
@@ -11,8 +9,7 @@ function addColor(){
       else{
         $(this).attr("style", "background-Color:" +color);
       }  
-    })
-    
+    })  
  }
  // Select size input
  $("#sizePicker").submit(function(event){
@@ -21,8 +18,7 @@ function addColor(){
    let height = $("#inputHeight").val();
    let width = $("#inputWeight").val();
    makeGrid(height, width);
-   addColor();
-   
+   addColor();  
  });
  // When size is submitted by the user, call makeGrid()
  
@@ -42,4 +38,3 @@ function addColor(){
    }
    
  }
- 
